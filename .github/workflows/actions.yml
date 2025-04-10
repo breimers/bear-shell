@@ -1,0 +1,19 @@
+name: BearShell Workflow
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    uses: ./.github/workflows/tests.yml  # This will reference the 'tests.yml' file
+    with:
+      python-version: '3.11'
+  publish:
+    uses: ./.github/workflows/publish.yml  # This will reference the 'tests.yml' file
+    with:
+      python-version: '3.11'
