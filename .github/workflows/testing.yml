@@ -2,7 +2,7 @@ name: Test (non-blocking)
 
 on:
   push:
-    tags:
+    branches:
       - '*'
 
 jobs:
