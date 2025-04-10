@@ -1,3 +1,10 @@
+name: Test (non-blocking)
+
+on:
+  push:
+    tags:
+      - '*'
+
 jobs:
   test:
     runs-on: ubuntu-latest
