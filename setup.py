@@ -9,7 +9,7 @@ setup(
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     url='https://github.com/breimers/bear-shell',  # Replace with your repository URL
-    packages=find_packages(),
+    packages=['bearshell'],
     classifiers=[
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.7',
