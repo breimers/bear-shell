@@ -10,10 +10,10 @@ on:
 
 jobs:
   test:
-    uses: ./.github/workflows/tests.yml  # This will reference the 'tests.yml' file
+    uses: ./.github/workflows/pipeline/tests.yml  # This will reference the 'tests.yml' file
     with:
       python-version: '3.11'
   publish:
-    uses: ./.github/workflows/publish.yml  # This will reference the 'tests.yml' file
+    uses: ./.github/workflows/pipeline/publish.yml  # This will reference the 'tests.yml' file
     with:
       python-version: '3.11'
