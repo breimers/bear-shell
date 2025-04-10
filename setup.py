@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='bearshell',
-    version='0.1.1',
+    version='0.1.2',
     author='Bradley Reimers',
     author_email='b.a.reimers@gmail.com',
     description='A (relatively) secure and easy-to-use subprocess implementation for Python',
