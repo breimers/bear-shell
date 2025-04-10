@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+      - name: Install APT Requirements
+        run: |
+          apt-get update & apt-get install -y python-build, python-installer python-wheel and python-setuptools
       - name: Checkout repository
         uses: actions/checkout@v2
 
