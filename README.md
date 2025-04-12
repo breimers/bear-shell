@@ -46,11 +46,6 @@ response = shell.run("nmap -p 80 192.168.1.1")
 # Output the response
 print(response.to_dict())
 
-# Run a custom command directly (this will be parsed and validated)
-response = shell.run("nmap -p 80 192.168.1.1")
-
-# Output the response
-print(response.to_dict())
 ```
 
 ## Command Response
@@ -80,7 +75,7 @@ Block-List: Blocks commands that are added to the block-list.
 Injection Risk Detection: Automatically checks for dangerous patterns (e.g., rm, shutdown) and blocks commands with such patterns.
 
 ### Example Response Object
-
+```json
 {
   "start_time": "2025-04-10T12:30:00",
   "end_time": "2025-04-10T12:30:05",
@@ -88,3 +83,4 @@ Injection Risk Detection: Automatically checks for dangerous patterns (e.g., rm,
   "stderr": "",
   "error_message": null
 }
+```
